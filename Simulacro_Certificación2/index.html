@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alan Sepúlveda">
+    <title>Simulacro de Certificación N°2</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header>
+
+<!--Barra de navegación-->
+        <nav class="nav">
+            <div class="marca">
+                <img src="static/images/libro.png" alt="Logo Biblioteca Horizonte" class="logo">
+                <h1 class="titulo">
+                    Biblioteca <br>
+                    <span class="span">Horizonte</span>
+                </h1>
+            </div>
+            <div class="separacion">
+                <form action="#" class="login" id="loginForm">
+                    <input type="email" placeholder="Email" id="email" required>
+                    <button type="submit" id="botonLogin">
+                        Ingresar
+                    </button>
+                </form>
+                <div class="contador-libros">
+                    <img src="static/images/libros.png" alt="Libros seleccionados" class="libros">
+                    <p>
+                        Libros<br>
+                        seleccionados:
+                    </p>
+                    <p class="numero" id="librosSeleccionados">
+                        0
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<!--Contenedor de imagenes-->
+
+    <main class="contenedor-p">
+        <div class="contenedor-imagenes">
+            <div class="imagen1">
+                <img src="static/images/libro.png" alt="Novelas">
+                <p>Novelas</p>
+            </div>
+            <div class="imagen2">
+                <img src="static/images/icono quimica.png" alt="Ciencia">
+                <p>Ciencia</p>
+            </div>
+            <div class="imagen3">
+                <img src="static/images/icono historia.png" alt="Historia">
+                <p>Historia</p>
+            </div>
+            <div class="imagen4">
+                <img src="static/images/icono tecnologia.png" alt="Tecnología">
+                <p>Tecnología</p>
+            </div>
+            <div class="imagen5">
+                <img src="static/images/icono arte.png" alt="Arte">
+                <p>Arte</p>
+            </div>
+            <div class="imagen6">
+                <img src="static/images/icono infantil.png" alt="Infantil">
+                <p>Infantil</p>
+            </div>
+        </div>
+
+<!--Sección principal-->
+        <div class="row">
+            <section class="seccion1">
+                <div class="contenido-principal">
+                    <h1>Descubre nuevas historias
+                        <br class="linea">
+                        <span class="span">__</span>
+                    </h1>
+                    <p>
+                        Explora nuestra biblioteca virtual y encuentra libros para todos los gustos.
+                        Conocimiento, aventura y mucho más al alcance de un clic.
+                    </p>
+                </div>
+
+<!--Contenedor del video-->
+
+                <div class="video-contenedor">
+                    <video id="videoLibreria" controls poster="static/images/miniatura1.jfif">
+                        <source src="static/videos/Turismo en Santiago de Chile. Biblioteca de Santiago.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <p>Conoce la Biblioteca Horizonte</p>
+                </div>
+            </section>
+
+<!--Libros destacados-->
+
+            <section class="seccion2">
+                <h1>Libros destacados</h1>
+                <div class="column">
+                    <img src="static/images/imagen1.jfif" alt="Cien años de soledad" class="imagen-libro">
+                    <div class="divrow">
+                        <div>
+                            <p>Gabriel García Márquez</p>
+                            <a href="#" class="ver-mas">Ver más...</a>
+                        </div>
+                        <button class="btnmas" id="btnMas1" type="button">+</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="static/images/imagen2.jfif" alt="Sapiens" class="imagen-libro">
+                    <div class="divrow">
+                        <div>
+                            <p>Yuval Noah Harari</p>
+                            <a href="#" class="ver-mas">Ver más...</a>
+                        </div>
+                        <button class="btnmas" id="btnMas2">+</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="static/images/imagen3.webp" alt="El Principito" class="imagen-libro">
+                    <div class="divrow">
+                        <div>
+                            <p>Antoine de Saint-Exupéry</p>
+                            <a href="#" class="ver-mas">Ver más...</a>
+                        </div>
+                        <button class="btnmas" id="btnMas3" type="button">+</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
