@@ -1,3 +1,4 @@
+//variables  ///////////////////////////////////////////////////////////////////////////////////////////
 let contador = 0;
 
 let boton1 = document.querySelector("#btnMas1");
@@ -8,6 +9,7 @@ let email = document.querySelector("#email");
 let formulario = document.querySelector("#loginForm");
 const video = document.querySelector("#videoLibreria");
 
+// funcion  del numero de libros en la barra nav  //////////////////////////////////////////////////////
 function agregarLibro() {
     contador = contador + 1;
     carro.textContent = contador;
@@ -22,7 +24,7 @@ boton2.addEventListener("click", function() {
 boton3.addEventListener("click", function() {
     agregarLibro();
 });
-
+// funcion de bienvenida al usuario  ///////////////////////////////////////////////////////////////////
 formulario.addEventListener("submit", function(event) {
     event.preventDefault();
     if (email.value !== "") {
@@ -31,9 +33,9 @@ formulario.addEventListener("submit", function(event) {
         alert("Por favor, ingresa un correo valido.");
     }
 });
-
+//funcion para cambiar la miniatura del video al colocar el cursor sobre el  ///////////////////////////
 video.addEventListener("mouseover", function() {
-    video.setAttribute("poster", "static/images/miniatura2.jpg");
+    video.setAttribute("poster", "static/images/miniatura 2.jpg");
 });
 
 video.addEventListener("mouseout", function() {

@@ -1,4 +1,5 @@
-/*reinicio (las lineas de barras son para que se note mas las separaciones de secciones)*/
+/* Reinicio  //////////////////////////////////////////////////////////////////////////////////////////*/
+
 * {
     padding: 0;
     margin: 0;
@@ -9,15 +10,17 @@
 body {
     background-color: white;
 }
-/*Barra de navegación  //////////////////////////////////////////////////////////////////////////////*/
+
+/* Barra de navegación  //////////////////////////////////////////////////////////////////////////////*/
+
 .nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 3px solid;
-    height: 70px;
-    padding: 0 20px;
+    border: 2px solid;
+    height: 55px;
+    padding: 0 15px;
 }
 
 .marca {
@@ -29,12 +32,12 @@ body {
 }
 
 .logo {
-    width: 50px;
-    height: 35px;
+    width: 38px;
+    height: 30px;
 }
 
 .titulo {
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 
 .span {
@@ -59,21 +62,22 @@ body {
 }
 
 .login input {
-    height: 40px;
-    width: 300px;
-    border: 2px solid;
-    border-radius: 5px;
-    font-weight: bold;
-    padding-left: 10px;
+    height: 28px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 3px;
+    font-weight: normal;
+    padding-left: 7px;
 }
 
 .login button {
-    height: 40px;
-    width: 90px;
+    height: 28px;
+    width: 55px;
     background-color: #2A5EA3;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;
+    font-size: 11px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -105,7 +109,7 @@ body {
     font-weight: bolder;
 }
 
-/*Imagenes  //////////////////////////////////////////////////////////////////////////////////////*/
+/* Contenedor Principal  /////////////////////////////////////////////////////////////////////////////*/
 
 .contenedor-p {
     display: flex;
@@ -115,50 +119,41 @@ body {
     width: 100%;
 }
 
+/* Categorias (texto e imagenes)  ////////////////////////////////////////////////////////////////////*/
+
 .contenedor-imagenes {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: 150px;
+    height: 85px;
     width: 1200px;
     background-color: #D2DDE8;
 }
 
-.imagen1,
-.imagen2,
-.imagen3,
-.imagen4,
-.imagen5,
-.imagen6 {
+.imagen1, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 150px;
-    width: 130px;
-    gap: 5px;
+    height: 65px;
+    width: 105px;
+    gap: 2px;
+    background-color: #ECEFF4;
 }
 
-.imagen1 img,
-.imagen2 img,
-.imagen3 img,
-.imagen4 img,
-.imagen5 img,
-.imagen6 img {
-    height: 85px;
-    width: 75px;
+.imagen1 img, .imagen2 img, .imagen3 img, .imagen4 img, .imagen5 img, .imagen6 img {
+    height: 42px;
+    width: 42px;
 }
 
-.imagen1 p,
-.imagen2 p,
-.imagen3 p,
-.imagen4 p,
-.imagen5 p,
-.imagen6 p {
-    color: white;
+.imagen1 p, .imagen2 p, .imagen3 p, .imagen4 p, .imagen5 p, .imagen6 p {
+    color: black;
     font-weight: bold;
+    font-size: 10px;
 }
+
+/* Fila principal (mantiene a las dos Secciones)  /////////////////////////////////////////////////////*/
 
 .row {
     display: flex;
@@ -168,7 +163,9 @@ body {
     gap: 30px;
     margin-top: 25px;
 }
-/*Sección principal   ////////////////////////////////////////////////////////////////////////////*/
+
+/* Sección principal (Video) //////////////////////////////////////////////////////////////////////////*/
+
 .seccion1 {
     display: flex;
     flex-direction: row;
@@ -176,24 +173,32 @@ body {
     align-items: center;
     background-color: #CCCCCC;
     width: 750px;
-    height: 500px;
-    padding: 40px;
-    gap: 30px;
+    height: 300px;
+    padding: 25px;
+    gap: 20px;
 }
+
 .contenido-principal {
     width: 40%;
 }
 
 .seccion1 h1 {
     color: #152F48;
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .seccion1 h1 .span {
     color: #295FA7;
-    font-size: 28px;
+    font-size: 20px;
 }
+
+.contenido-principal p {
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+
+/* Video  ////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .video-contenedor {
     display: flex;
@@ -205,75 +210,102 @@ body {
 }
 
 video {
-    width: 380px;
-    height: 240px;
-}
-
-.video-contenedor p {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #152F48;
-}
-
-.contenido-principal p {
-    margin-bottom: 10px;
-    font-size: 15px;
+    width: 300px;
+    height: 190px;
 }
 
 .video-contenedor p {
     margin-top: 10px;
     margin-bottom: 0;
+    font-size: 11px;
     font-weight: bold;
     color: #152F48;
 }
 
-/*Sección libros    ////////////////////////////////////////////////////////////////////////////////*/
+/* Sección de libros destacados  //////////////////////////////////////////////////////////////////////*/
 
 .seccion2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 500px;
+    width: 330px;
+    height: 300px;
 }
 
 .seccion2 h1 {
-    margin: 5px 0 15px 0;
+    margin: 5px 0 10px 0;
     color: #152F48;
-    font-size: 25px;
+    font-size: 18px;
 }
+
+/* Contenedores de los libros  ////////////////////////////////////////////////////////////////////////*/
 
 .column {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    align-items: center;
+    width: 320px;
     height: 100px;
-    margin-bottom: 15px;
+    padding: 3px;
+    border: 1px solid #999;
 }
 
-.imagen-libro {
-    height: 100px;
-    width: 130px;
+.column p {
+    color: #737273;
 }
+
+/* Imagenes de los libros  ///////////////////////////////////////////////////////////////////////////*/
+
+.imagen-libro {
+    height: 55px;
+    width: 65px;
+    object-fit: contain;
+    border: 2px solid #999;
+    background-color: #D9D9D9;
+}
+
+/* Información del libro  /////////////////////////////////////////////////////////////////////////////*/
 
 .divrow {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
-    width: 270px;
+    width: 245px;
+    height: 100%;
     padding-left: 15px;
 }
 
+/* Contenedor superior del título y autor /////////////////////////////////////////////////////////////*/
+
+.divrow-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Contenedor inferior de "Ver más..." y botón ///////////////////////////////////////////////////////*/
+
+.divrow-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
 .divrow p {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
 }
 
 .divrow a {
     color: #295FA7;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: bold;
 }
 
@@ -281,14 +313,29 @@ video {
     text-decoration: underline;
 }
 
+/* Titulos y autores  /////////////////////////////////////////////////////////////////////////////////*/
+
+.titulo-libro {
+    font-weight: bolder;
+    color: black;
+}
+
+.gris {
+    color: #C8C8C7;
+}
+
+/* Botones +  /////////////////////////////////////////////////////////////////////////////////////////*/
+
 .btnmas {
     background-color: #152F48;
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    margin-top: 0;
+    margin-left: 8px;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
 }
