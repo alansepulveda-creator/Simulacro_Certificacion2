@@ -1,5 +1,7 @@
 # Biblioteca Horizonte
 
+**Autor:** Alan Sepúlveda
+
 Proyecto web de una biblioteca virtual desarrollado como parte del **Simulacro de Certificación N°2**.
 
 La página permite visualizar distintas categorías de libros, consultar libros destacados, iniciar sesión mediante un correo electrónico y agregar libros a una selección mediante un contador.
